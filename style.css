@@ -1,0 +1,14 @@
+.container{
+    width: 80%;
+    border: 2px solid orange;
+    padding: 20px;
+    text-align: justify;
+    margin: auto;
+}
+header{
+    background: orange;
+    width: 100%;
+}
+.container main img{
+    width: 100%;
+}
