@@ -3,7 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS</title>
+    <title>CSS</title><style>
+form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+label {display: block;}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=password], select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+</style>    
 </head>
 <link rel="stylesheet" href="../css/style.css">
 <body>
@@ -14,7 +56,7 @@
                     <li><a href="../index.html">Inicio</a></li>
                     <li><a href="productos.html">Productos</a></li>
                     <li><a href="servicios.html">Servicios</a></li>
-                    <li><a href="contactos.html">Contactos</a></li>
+                    <li><a href="#">Contactos</a></li>
                 </ul>
             </nav>
         </header>
@@ -22,12 +64,51 @@
             <img src="../imagen1/contactos.png" alt="">
             <div class="main_principal">
                 <h2>CONTACTANOS</h2>
+                <h2>para comunicarse con un asespr de clic en la imagen de whatsapp</h2>
+
+                <a href="https://api.whatsapp.com/send/?phone=573246720695&text=Hola%2C+necesito+informaci%C3%B3n&type=phone_number&app_absent=0">
+                    <img src="../imagen1/img_boton_whatsapp.png"  
+                    style="width:50px";  alt="">
+                </a>
                 <P>Estos es un parrafo dentro del divisor</P>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis cumque quia iste laboriosam est. Illo nam ut laudantium ex praesentium expedita sapiente quaerat tempore numquam omnis, dolorem laborum, quasi quos!</p>
             </div>
+            <h2>FORMULARIO DE CONTACTO</h2>
+
+            <form action="/action_page.php">
+                <label for="fname">Usuario</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                <label for="lname">password</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                <label for="country">Rol</label>
+                <select id="country" name="country">
+                <option value="australia">Administrador</option>
+                <option value="canada">Jefe</option>
+                <option value="usa">Secretaria</option>
+                </select>
+
+                <input type="submit" value="Submit">
+            </form>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1973.9398143699532!2d-73.59766856604422!3d8.314758989428618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e5d8f7d27c7bf07%3A0xa72b1dc51f284557!2sUniversidad%20Popular%20del%20Cesar%20-%20Aguachica!5e0!3m2!1ses!2sco!4v1773434051656!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+
+
+
+
         </main>
+
         <footer>
-            <p>Pie de mi pagina web</p>
+            <p style="text-align: center;">
+                <a href="https://web.facebook.com/"><img src="../imagen1/boton_facebook.png" alt="" width="40PX">
+                </a>
+                <a href="https://web.facebook.com/"><img src="../imagen1/boton_instagram.png" alt="" width="40PX">
+                </a>
+                <a href="https://web.facebook.com/"><img src="../imagen1/boton_pinteres.png" alt="" width="40PX">
+                </a>
+            </p>
         </footer>
     </div>
 </body>
